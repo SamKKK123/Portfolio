@@ -124,6 +124,56 @@
             padding-bottom: 40px;
             padding-top: 20px;
         }
+
+
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .firstSection div {
+                width: 90%;
+                margin: 20px 0;
+            }
+
+            .rightSection img {
+                width: 90%;
+                margin: 20px 0;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            .left {
+                font-size: 1.5rem;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -150,9 +200,10 @@
                 Hi! I am Sameer Khan, I have <span class="purple">completed</span> my class XII in the year 2024.
                 <p>My main subjects of intrest were Computer Science & Chemistry.</p>
                 <p>I have never had my hands on HTML or CSS before, I have had experience form Js so this made it
-                    easy for me to understand HTML while building this website. 
+                    easy for me to understand HTML while building this website.
                 </p>
-                <p> I started building this website like 1 Day prior to our today's class on 2<sup style="font-size: 0.6em;">nd</sup> July</p>
+                <p> I started building this website like 1 Day prior to our today's class on 2<sup
+                        style="font-size: 0.6em;">nd</sup> July</p>
             </div>
             <div class="rightSection">
                 <img src="bg1.png" alt="Image" width="350">
@@ -163,7 +214,8 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>I am passionate about robotics, I love to make Iot projects & I have made many models using Arduino, ESP32 Cam, etc. I
+            <p>I am passionate about robotics, I love to make Iot projects & I have made many models using Arduino,
+                ESP32 Cam, etc. I
                 started my CS journey
                 in grade 9 with Java-Script and then went on ahead with Python & C++ with specific Arduino libraries in
                 class XI. I love what
@@ -206,3 +258,5 @@
 </body>
 
 </html>
+
+Made site responsive for mobile
