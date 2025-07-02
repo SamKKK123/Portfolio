@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(20, 19, 19);
+            color: white;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 23px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li:hover {
+            transform: translateY(-2px) scale(1.1);
+            color: white;
+        }
+
+        .left {
+            font-size: 1.99rem;
+        }
+
+
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .firstSection div {
+            margin: 30px;
+            width: 30%;
+        }
+
+        .leftSection {
+            padding-top: 30px;
+            font-size: 1.5rem;
+        }
+
+        .leftSection p {
+            font-size: 1.1rem;
+            padding-top: 20px;
+        }
+
+        .rightSection img {
+            margin: 100px;
+        }
+
+        .purple {
+            color: rgb(172, 0, 172);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 0px 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        #about {
+            padding-bottom: 40px;
+        }
+
+        #projects {
+            padding-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        #services {
+            padding-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        #education {
+            padding-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        #contact {
+            padding-bottom: 40px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sameer's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+
+            <div class="leftSection">
+                Hi! I am Sameer Khan, I have <span class="purple">completed</span> my class XII in the year 2024.
+                <p>My main subjects of intrest were Computer Science & Chemistry.</p>
+                <p>I have never had my hands on HTML or CSS before, I have had experience form Js so this made it
+                    easy for me to understand HTML while building this website. 
+                </p>
+                <p> I started building this website like 1 Day prior to our today's class on 2<sup style="font-size: 0.6em;">nd</sup> July</p>
+            </div>
+            <div class="rightSection">
+                <img src="bg1.png" alt="Image" width="350">
+            </div>
+        </section>
+
+
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am passionate about robotics, I love to make Iot projects & I have made many models using Arduino, ESP32 Cam, etc. I
+                started my CS journey
+                in grade 9 with Java-Script and then went on ahead with Python & C++ with specific Arduino libraries in
+                class XI. I love what
+                I do and I am also a good video editor. I have had clients in past like Prenne <span class="purple">(A
+                    make up brand)</span> and
+                other personal clients through Discord. Down below you can see in more details about my Projects.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I’ve built or worked on recently...</p>
+            <img src="front.jpg" alt="" width="300">
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p>I offer website design, front-end development, and basic back-end integration.</p>
+        </section>
+
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>I have successfully completed my 1st year Data Science Engineering from IIT Madras online BS Degree
+                Course with CGPA of 8.7</p>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me at: <strong>sam6549770@gmail.com</strong></p>
+        </section>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>
