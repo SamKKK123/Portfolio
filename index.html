@@ -2,291 +2,324 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sameer - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sameer - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
 
-        body {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            font-family: 'Poppins', sans-serif;
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      background-color: #141313;
+      color: white;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 70px;
-            background-color: rgb(20, 19, 19);
-            color: white;
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
 
-        }
+    nav ul li {
+      list-style: none;
+      margin: 23px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
 
-        nav ul li {
-            list-style: none;
-            margin: 23px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
+    nav ul li:hover {
+      transform: translateY(-2px) scale(1.1);
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
+    .left {
+      font-size: 1.99rem;
+    }
 
-        nav ul li:hover {
-            transform: translateY(-2px) scale(1.1);
-            color: white;
-        }
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+      flex-wrap: wrap;
+    }
 
-        .left {
-            font-size: 1.99rem;
-        }
+    .firstSection div {
+      margin: 30px;
+      width: 30%;
+    }
 
+    .leftSection {
+      padding-top: 30px;
+      font-size: 1.5rem;
+    }
 
+    .leftSection p {
+      font-size: 1.1rem;
+      padding-top: 20px;
+    }
 
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px;
-        }
+    .rightSection img {
+      margin: 100px;
+      max-width: 100%;
+    }
 
-        .firstSection div {
-            margin: 30px;
-            width: 30%;
-        }
+    .purple {
+      color: rgb(172, 0, 172);
+    }
 
-        .leftSection {
-            padding-top: 30px;
-            font-size: 1.5rem;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .leftSection p {
-            font-size: 1.1rem;
-            padding-top: 20px;
-        }
+    section {
+      padding: 20px;
+      border-bottom: 2px solid #ccc;
+    }
 
-        .rightSection img {
-            margin: 100px;
-        }
+    section h2 {
+      margin-bottom: 20px;
+    }
 
-        .purple {
-            color: rgb(172, 0, 172);
-        }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+      }
 
-        html {
-            scroll-behavior: smooth;
-        }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+      }
 
-        section {
-            padding: 0px 20px;
-            border-bottom: 2px solid #ccc;
-        }
+      nav ul li {
+        margin: 10px 0;
+      }
 
-        section h2 {
-            margin-bottom: 20px;
-        }
+      .firstSection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
-        #about {
-            padding-bottom: 40px;
-        }
+      .firstSection div {
+        width: 90%;
+        margin: 20px 0;
+      }
 
-        #projects {
-            padding-bottom: 40px;
-            padding-top: 20px;
-        }
+      .rightSection img {
+        width: 90%;
+        margin: 20px 0;
+      }
 
-        #services {
-            padding-bottom: 40px;
-            padding-top: 20px;
-        }
+      section {
+        padding: 40px 15px;
+      }
 
-        #education {
-            padding-bottom: 40px;
-            padding-top: 20px;
-        }
+      section h2 {
+        font-size: 1.5rem;
+      }
 
-        #contact {
-            padding-bottom: 40px;
-            padding-top: 20px;
-        }
+      .left {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
 
+    .contact-form {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin-top: 20px;
+    }
 
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
 
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                height: auto;
-                padding: 10px 0;
-            }
+    .contact-form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                padding: 0;
-            }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-            nav ul li {
-                margin: 10px 0;
-            }
+    .contact-form input[type="submit"] {
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-            .firstSection {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+    .contact-form input[type="submit"]:hover {
+      background-color: #333;
+    }
 
-            .firstSection div {
-                width: 90%;
-                margin: 20px 0;
-            }
+    th,
+    td {
+      padding: 12px 20px;
+      text-align: center;
+      background-color: #dedeff;
+    }
 
-            .rightSection img {
-                width: 90%;
-                margin: 20px 0;
-            }
-
-            section {
-                padding: 40px 15px;
-            }
-
-            section h2 {
-                font-size: 1.5rem;
-            }
-
-
-            .left {
-                font-size: 1.5rem;
-                text-align: center;
-                margin-bottom: 10px;
-            }
-
-
-
-
-        }
-    </style>
+    section {
+      padding: 20px;
+      padding-left: 20px;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Sameer's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="left">Sameer's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="firstSection">
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <h2>Hello, I'm Sameer Khan</h2>
+        <p>I completed my Class XII in 2024 and this is my first personal website project.</p>
+        <p>As I continue to learn HTML and CSS, I plan to improve and expand this site further.</p>
+        <p>Use the navigation bar to explore the sections below. Each button will take you directly to the relevant
+          content.</p>
+        <p><strong>Note: This website is mobile-responsive.</strong></p>
+      </div>
+      <div class="rightSection">
+        <img src="bg1.png" alt="Profile Image" width="350">
+      </div>
+    </section>
 
-            <div class="leftSection">
-                Hi! I am Sameer Khan, I have <span class="purple">completed</span> my class XII in the year 2024.
-                <p>My main subjects of intrest were Computer Science & Chemistry.</p>
-                <p>I have never had my hands on HTML or CSS before, I have had experience form Js so this made it
-                    easy for me to understand HTML while building this website.
-                </p>
-                <p> I started building this website like 1 Day prior to our today's class on 2<sup
-                        style="font-size: 0.6em;">nd</sup> July</p>
-            </div>
-            <div class="rightSection">
-                <img src="bg1.png" alt="Image" width="350">
-            </div>
-        </section>
-
-
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am passionate about robotics, I love to make Iot projects & I have made many models using Arduino,
-                ESP32 Cam, etc. I
-                started my CS journey
-                in grade 9 with Java-Script and then went on ahead with Python & C++ with specific Arduino libraries in
-                class XI. I love what
-                I do and I am also a good video editor. I have had clients in past like Prenne <span class="purple">(A
-                    make up brand)</span> and
-                other personal clients through Discord. Down below you can see in more details about my Projects.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>- Here are some of the projects I’ve built or worked on recently...</p>
-
-            <p>- I made a ESP32 Cam car that send live footage to your mobile,
-                so you can enjoy you experience from anywhere.it uses wifi to
-                connect and upload feed video and uses
-                <span class="purple">L298N Motor Driver</spanclass></span> to control the motor on each axle.
-            </p>
-
-            <p>- 3.7v 2000mah lithium cells connected in series will give it a 30 min run</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m passionate about robotics and have created several IoT projects using Arduino, ESP32-CAM, and related
+        technologies.<br>
+        My coding journey began in 9th grade with JavaScript, and since then I’ve gained experience in Python and C++,
+        particularly for Arduino development.
+      </p>
+      <br>
+      <h3>How my day goes...</h3>
+      <br>
+      <table border="1">
+        <tr>
+          <th>Morning</th>
+          <th>Afternoon</th>
+          <th>Evening</th>
+          <th>Night</th>
+        </tr>
+        <tr>
+          <td>Coding</td>
+          <td>Coffee Break & Youtube</td>
+          <td>Coding</td>
+          <td>Exploring Web</td>
+        </tr>
+      </table>
 
 
-            <img src="front.jpg" alt="" width="300">
-            <img src="side.jpg" alt="" width="400" style="margin-left: 20px;">
-            <video width="500" height="300" controls>
-                <source src="camvid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
+    </section>
 
-        <section id="services">
-            <h2>Services</h2>
-            <p>I offer video editing services. That are specifically for shorts & reels and I mostly edit videos under 1
-                min</p>
-            <p>You can see a small part of it down below - </p> <a href="https://www.youtube.com/@morpheditss"
-                target="_blank" style="color: red; text-decoration: none; font-weight: bold;">
-                📺 Visit my YouTube Channel
-            </a>
-        </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of the projects I’ve built:</p>
+      <ul>
+        <li>Developed an ESP32-CAM car that streams live video to your phone and can be controlled remotely using Wi-Fi.
+        </li>
+        <li>Used an <span class="purple">L298N Motor Driver</span> to control the motors on each axle.</li>
+        <li>Powered the system with three 3.7V 2000mAh lithium-ion batteries in series, providing about 30 minutes of
+          runtime.</li>
+      </ul>
+      <img src="front.jpg" alt="Car Front View" width="300">
+      <img src="side.jpg" alt="Car Side View" width="400" style="margin-left: 20px;">
+      <video width="500" height="300" controls>
+        <source src="camvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Experienced in IoT and Robotics using Arduino and ESP32.</li>
+        <li>Skilled in video editing, especially for short-form content like YouTube Shorts and Instagram Reels.</li>
+      </ul>
+      <p>Check out my work here:</p>
+      <a href="https://www.youtube.com/@morpheditss" target="_blank"
+        style="color: red; text-decoration: none; font-weight: bold;">
+        📺 Visit my YouTube Channel
+      </a>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <p>I am pursuing BS in Data Science from IIT Madras and have completed Foundational level [(1<sup
-                    style="font-size: 0.6em;">st</sup>) year] with 8.7 CGPA</p>
-        </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p>I am currently pursuing a B.S. in Data Science from IIT Madras. I have completed the foundational level (first
+        year) with a CGPA of 8.7 🎓</p>
+    </section>
 
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me at: <strong>sam6549770@gmail.com</strong></p><br>
+      <p>Or fill out the form below 👇 and I'll get back to you as soon as possible 😎</p>
+      <div class="contact-form">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach me at: <strong>sam6549770@gmail.com</strong></p>
-        </section>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
 
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-
-    </main>
-
-
-
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>
-
-
 </body>
-
 </html>
 
 
